@@ -1,0 +1,44 @@
+#clockcontainer{
+    position: relative; /* this is use so that for different sizes of screens the needles should not change their positions.  */
+    margin: auto; /* use to position the clock in the center  */
+    
+    height: 40vw; /* 40% of the screensize of whatever device you are using  */
+    width: 40vw; 
+    background: url(clock.png) no-repeat; /* to put the clock image in the background */
+    background-size: 100%; /* to fully fit the clock in the frame  */
+}
+
+#hour, #minute, #second{
+    position: absolute; /* this is important so that the postion should absolute and not make nay trouble */
+    background: black; /* color of the niddles of the clock */
+    border-radius: 10px;
+    transform-origin: bottom; /* so that the niddles should rotate from the bottom and not from the middle. */
+}
+#hour{  /* shaping and positioning the niddles one by one */
+    width: 1.8%;
+    height: 25%;
+    top: 25%;
+    left: 48.85%;
+    opacity: 0.8;
+    
+    
+
+}
+#minute{
+    width: 1.6%;
+    height: 30%;
+    top: 19%;
+    left: 48.9%;
+    opacity: 0.8;
+    
+    
+
+}
+#second{
+    width: 1%;
+    height: 40%;
+    top: 9%;
+    left: 49.25%;
+    opacity: 0.8;
+
+}
